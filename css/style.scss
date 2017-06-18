@@ -1,0 +1,365 @@
+@import "compass";
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+html {
+  font-size: 62.5%;
+ 
+}
+
+@mixin fontsize($size: 24, $base: 10) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+$ja_font:"Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$menu_font:'Josefin Sans', sans-serif,'Abel', sans-serif,'Unica One', cursive,'Fugaz One', cursive;
+$golden: #ae905c;
+$white: #ffffff;
+$green: #97ddc2;
+
+  h2{
+       text-transform:uppercase;
+       font-size: 25px;
+        font-family: $menu_font;
+        color: $golden;
+        line-height: 1.2;
+        text-shadow: 0px 3px 7px rgba(6, 6, 6, 0.52);
+  }
+   h3{
+       //text-transform:uppercase;
+       font-size: 22px;
+        font-family: $menu_font;
+        color: $golden;
+        line-height: 1.2;
+        //text-shadow: 0px 3px 7px rgba(6, 6, 6, 0.52);
+  }
+    h4{
+       text-transform:uppercase;
+       font-size: 12px;
+        font-family: $menu_font;
+        color: $green;
+        line-height: 1.2;
+        text-shadow: 0px 3px 7px rgba(6, 6, 6, 0.52);
+  }
+    h5{
+      // text-transform:uppercase;
+       font-size: 12px;
+        font-family: $menu_font;
+        color: $golden;
+        line-height: 1.2;
+        text-shadow: 0px 3px 7px rgba(6, 6, 6, 0.52);
+  }
+  li{
+    
+      list-style: none;
+  }
+  
+
+header{
+  //pc
+    .pc_navi{
+    background-image:  url(../images/top/background-pic.png);
+    height: 0;
+    width: 100%;
+    padding-top: 62.5%;
+    background-size: contain;
+   
+    .pc_navi_li{
+    position: fixed;
+    right: 5%;
+    top: 40px;
+    padding:0;
+    width: 340px;
+    height: 100px;
+    z-index: 1;
+    li{
+      list-style: none;
+      display: inline-block;
+      width: 100px;
+      padding: 0;
+      a{text-decoration: none;
+    :hover {
+    color: #97ddc2;
+    transition: all 0.3s linear;
+    }
+    
+  }
+    }
+    }
+    .logo{
+      padding-top: 2vw;
+      font-size: 6.9vw;
+      text-align:center;
+      letter-spacing: 0.694vw;
+      font-family: "Century Gothic";
+      color: $white;
+      line-height: 1.2;
+      position: absolute;
+      left: 30%;
+      top: 25vw;
+      background-image: url(../images/top/square.png);
+      background-repeat: no-repeat;
+      background-position: left 31.5%  top 0.5vw;
+      background-size: 10vw;
+    }
+    bold{
+      font-weight:bold; 
+    }
+    hr{
+      background-color: $white;
+      position: relative;
+      top: 3%;
+      right: 10%;
+      width: 14.1vw;
+      height: 0.8px;
+    }
+    #mes{
+      font-size: 1.7vw;
+      font-family: "Meiryo";
+      color: $white;
+      line-height: 1.2;
+      text-align: center;
+      position: absolute;
+      left: 33%;
+      top: 45vw;
+      z-index:1;
+    }
+    #search{
+      position: absolute;
+      left: 34%;
+      top: 53vw;
+      .kulan{
+      border-radius: 1.98vw 1.98vw 1.98vw 1.98vw / 1.98vw 1.98vw 1.98vw 1.98vw;
+      background-color: transparent;
+      width: 24.3vw;
+      z-index:1;
+      }
+       .search-button{
+         margin-left: 2vw;
+         width: 8vw;
+          border-radius: 1.98vw 1.98vw 1.98vw 1.98vw / 1.98vw 1.98vw 1.98vw 1.98vw;
+         background-color: transparent;
+         border-color: $green;
+         font-family: $menu_font;
+         text-align: center;
+         padding: 0px;
+         z-index:1;
+       }
+    }
+    }
+    
+   //PC_END
+   
+    .sp_navi{
+      width: 100%;
+      margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; 
+      position:fixed;
+    z-index: 1;
+    #sp_menu{
+        text-transform:uppercase;
+       font-size: 15px;
+        font-family: $menu_font;
+        color: $golden;
+        line-height: 1.2;
+        text-shadow: 0px 3px 7px rgba(6, 6, 6, 0.52);
+        position: fixed;
+        top: 10px;
+        left: 20px;
+        
+       a{
+         text-decoration: none;
+       color:$golden;
+    
+    :hover {
+    color: #97ddc2;
+    transition: all 0.3s linear;
+    }
+    }
+   .sp_child{
+    position: absolute;
+    margin-left: 5px;
+    padding: 0;
+   display: none;
+  }
+  .sp_child_child{
+   display: none;
+   :hover {
+    color: $green;
+    transition: all 0.3s linear;
+    }
+  }
+   
+    }
+    
+  }
+  @media (min-width: 550px) {
+    .sp_navi{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .pc_navi_li{
+    display: none;
+  }
+
+  #search{
+    display: none;
+  }
+  #mes{
+    display: none;
+  }
+  }
+  
+}
+
+#pic{
+  margin-top: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 50vh;
+  background-image:  url(../images/footer/pink.png);
+  background-repeat: no-repeat;
+   background-position: right  bottom 10%;
+    background-size: 50vw;
+  .title-font{
+        //position: fixed;
+        z-index: 1;
+        margin-bottom: 50px;
+     #category_menu{
+       width: 200px;
+     }
+      a{
+       text-decoration: none;
+     
+    :hover {
+    color: $green;
+    background-color: transparent;
+    transition: all 0.3s linear;
+    
+    }
+  }
+  .child{
+    position: absolute;
+    margin-left: 15px;
+    margin-bottom: 20vw;
+    padding: 0;
+    display: none;
+    z-index: 1;
+     :hover {
+    color: $green;
+    transition: all 0.3s linear;
+    }
+    li{
+       display: inline-block;
+       margin-right: 100px;
+    }
+  }
+    
+     }
+
+.gallery{
+  //margin: 0 auto;
+}
+
+ img{
+   width:300px;
+   height: 300px;
+ }
+
+
+}
+ @media (min-width:1023px) and ( max-width:1440px){
+   .gallery{
+    padding-left: 10vw;
+  }
+    
+  }
+
+ @media (min-width:769px) and ( max-width:1024px){
+    img{
+       margin: 3vw 5vw;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    
+     #category_menu{
+      display: none;
+    }
+    img{
+     //  margin: 5vw 5vw ;
+    }
+    
+    
+    
+    
+  }
+
+
+
+#about{
+ margin-top: 20vh;
+  height: 30vh;
+   
+  .about-us{
+    text-align: center;
+
+  }
+  ul{
+    //	margin-top: 30px;
+	  text-align: center;
+  }
+  li{
+    text-align: center;
+	  vertical-align: top;
+    list-style: none;
+      display: inline-block;
+      padding:0;
+      margin-right: 20px;
+      margin-left: 20px;
+      a{text-decoration: none;
+     	font-size: 3.2rem;
+      color: $golden;
+    :hover {
+    color: $green;
+    background-color: transparent;
+    transition: all 0.3s linear;
+    }
+      }
+  }
+  
+}
+  footer{
+    
+    padding-top: 70vh;
+     background-image:  url(../images/footer/green.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 16%;
+    background-size: 10vw;
+    
+  
+   .footer-title{
+    bottom: 10%;  
+    position: relative;
+    font-size: 1.8vw;
+    text-align: center;
+    font-family: $menu_font;
+    color: $golden;
+    margin-bottom: 5vh;
+    }
+  
+    .footer-message{
+    position: absolute;
+    font-size: 1.8vw;
+    text-align: center;
+    font-family: $menu_font;
+    color: $golden;
+    margin-bottom: 10vh;
+    }
+  }
+  
+
+
+

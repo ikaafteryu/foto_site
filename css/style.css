@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+html {
+  font-size: 62.5%; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif, "Abel", sans-serif, "Unica One", cursive, "Fugaz One", cursive;
+  color: #ae905c;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7px rgba(6, 6, 6, 0.52); }
+
+h3 {
+  font-size: 22px;
+  font-family: "Josefin Sans", sans-serif, "Abel", sans-serif, "Unica One", cursive, "Fugaz One", cursive;
+  color: #ae905c;
+  line-height: 1.2; }
+
+h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Josefin Sans", sans-serif, "Abel", sans-serif, "Unica One", cursive, "Fugaz One", cursive;
+  color: #97ddc2;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7px rgba(6, 6, 6, 0.52); }
+
+h5 {
+  font-size: 12px;
+  font-family: "Josefin Sans", sans-serif, "Abel", sans-serif, "Unica One", cursive, "Fugaz One", cursive;
+  color: #ae905c;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7px rgba(6, 6, 6, 0.52); }
+
+li {
+  list-style: none; }
+
+header .pc_navi {
+  background-image: url(../images/top/background-pic.png);
+  height: 0;
+  width: 100%;
+  padding-top: 62.5%;
+  background-size: contain; }
+  header .pc_navi .pc_navi_li {
+    position: fixed;
+    right: 5%;
+    top: 40px;
+    padding: 0;
+    width: 340px;
+    height: 100px;
+    z-index: 1; }
+    header .pc_navi .pc_navi_li li {
+      list-style: none;
+      display: inline-block;
+      width: 100px;
+      padding: 0; }
+      header .pc_navi .pc_navi_li li a {
+        text-decoration: none; }
+        header .pc_navi .pc_navi_li li a :hover {
+          color: #97ddc2;
+          transition: all 0.3s linear; }
+  header .pc_navi .logo {
+    padding-top: 2vw;
+    font-size: 6.9vw;
+    text-align: center;
+    letter-spacing: 0.694vw;
+    font-family: "Century Gothic";
+    color: #ffffff;
+    line-height: 1.2;
+    position: absolute;
+    left: 30%;
+    top: 25vw;
+    background-image: url(../images/top/square.png);
+    background-repeat: no-repeat;
+    background-position: left 31.5%  top 0.5vw;
+    background-size: 10vw; }
+  header .pc_navi bold {
+    font-weight: bold; }
+  header .pc_navi hr {
+    background-color: #ffffff;
+    position: relative;
+    top: 3%;
+    right: 10%;
+    width: 14.1vw;
+    height: 0.8px; }
+  header .pc_navi #mes {
+    font-size: 1.7vw;
+    font-family: "Meiryo";
+    color: #ffffff;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    left: 33%;
+    top: 45vw;
+    z-index: 1; }
+  header .pc_navi #search {
+    position: absolute;
+    left: 34%;
+    top: 53vw; }
+    header .pc_navi #search .kulan {
+      border-radius: 1.98vw 1.98vw 1.98vw 1.98vw / 1.98vw 1.98vw 1.98vw 1.98vw;
+      background-color: transparent;
+      width: 24.3vw;
+      z-index: 1; }
+    header .pc_navi #search .search-button {
+      margin-left: 2vw;
+      width: 8vw;
+      border-radius: 1.98vw 1.98vw 1.98vw 1.98vw / 1.98vw 1.98vw 1.98vw 1.98vw;
+      background-color: transparent;
+      border-color: #97ddc2;
+      font-family: "Josefin Sans", sans-serif, "Abel", sans-serif, "Unica One", cursive, "Fugaz One", cursive;
+      text-align: center;
+      padding: 0px;
+      z-index: 1; }
+header .sp_navi {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1; }
+  header .sp_navi #sp_menu {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif, "Abel", sans-serif, "Unica One", cursive, "Fugaz One", cursive;
+    color: #ae905c;
+    line-height: 1.2;
+    text-shadow: 0px 3px 7px rgba(6, 6, 6, 0.52);
+    position: fixed;
+    top: 10px;
+    left: 20px; }
+    header .sp_navi #sp_menu a {
+      text-decoration: none;
+      color: #ae905c; }
+      header .sp_navi #sp_menu a :hover {
+        color: #97ddc2;
+        transition: all 0.3s linear; }
+    header .sp_navi #sp_menu .sp_child {
+      position: absolute;
+      margin-left: 5px;
+      padding: 0;
+      display: none; }
+    header .sp_navi #sp_menu .sp_child_child {
+      display: none; }
+      header .sp_navi #sp_menu .sp_child_child :hover {
+        color: #97ddc2;
+        transition: all 0.3s linear; }
+@media (min-width: 550px) {
+  header .sp_navi {
+    display: none; } }
+@media (max-width: 550px) {
+  header .pc_navi_li {
+    display: none; }
+  header #search {
+    display: none; }
+  header #mes {
+    display: none; } }
+
+#pic {
+  margin-top: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 50vh;
+  background-image: url(../images/footer/pink.png);
+  background-repeat: no-repeat;
+  background-position: right  bottom 10%;
+  background-size: 50vw; }
+  #pic .title-font {
+    z-index: 1;
+    margin-bottom: 50px; }
+    #pic .title-font #category_menu {
+      width: 200px; }
+    #pic .title-font a {
+      text-decoration: none; }
+      #pic .title-font a :hover {
+        color: #97ddc2;
+        background-color: transparent;
+        transition: all 0.3s linear; }
+    #pic .title-font .child {
+      position: absolute;
+      margin-left: 15px;
+      margin-bottom: 20vw;
+      padding: 0;
+      display: none;
+      z-index: 1; }
+      #pic .title-font .child :hover {
+        color: #97ddc2;
+        transition: all 0.3s linear; }
+      #pic .title-font .child li {
+        display: inline-block;
+        margin-right: 100px; }
+  #pic img {
+    width: 300px;
+    height: 300px; }
+
+@media (min-width: 1023px) and (max-width: 1440px) {
+  .gallery {
+    padding-left: 10vw; } }
+@media (min-width: 769px) and (max-width: 1024px) {
+  img {
+    margin: 3vw 5vw; } }
+@media (max-width: 550px) {
+  #category_menu {
+    display: none; } }
+#about {
+  margin-top: 20vh;
+  height: 30vh; }
+  #about .about-us {
+    text-align: center; }
+  #about ul {
+    text-align: center; }
+  #about li {
+    text-align: center;
+    vertical-align: top;
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-right: 20px;
+    margin-left: 20px; }
+    #about li a {
+      text-decoration: none;
+      font-size: 3.2rem;
+      color: #ae905c; }
+      #about li a :hover {
+        color: #97ddc2;
+        background-color: transparent;
+        transition: all 0.3s linear; }
+
+footer {
+  padding-top: 70vh;
+  background-image: url(../images/footer/green.png);
+  background-repeat: no-repeat;
+  background-position: center bottom 16%;
+  background-size: 10vw; }
+  footer .footer-title {
+    bottom: 10%;
+    position: relative;
+    font-size: 1.8vw;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif, "Abel", sans-serif, "Unica One", cursive, "Fugaz One", cursive;
+    color: #ae905c;
+    margin-bottom: 5vh; }
+  footer .footer-message {
+    position: absolute;
+    font-size: 1.8vw;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif, "Abel", sans-serif, "Unica One", cursive, "Fugaz One", cursive;
+    color: #ae905c;
+    margin-bottom: 10vh; }
+
+/*# sourceMappingURL=style.css.map */
